@@ -1,3 +1,5 @@
+# import sys, pdb
+
 class Counter:
     def __init__(self, initial_value=0):
         self._initial_value = initial_value
@@ -14,3 +16,7 @@ class Counter:
 
     def reset(self):
         self.value = self._initial_value
+
+    def set(self, value):
+        # pdb.Pdb(stdout=sys.__stdout__).set_trace()
+        self.value = value
